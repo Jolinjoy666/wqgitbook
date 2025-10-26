@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>LAB4: 如何召唤"沉睡的软件" · WQ GitBook</title>
+        <title>LAB4: 如何召唤"沉睡的软件" · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -15,18 +15,6 @@
     <link rel="stylesheet" href="../gitbook/style.css">
 
     
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-callouts/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
-                
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
@@ -40,17 +28,21 @@
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
-                
-            
         
 
     
 
     
         
-        <link rel="stylesheet" href="../styles/styles.css">
+    
+        
+    
+        
+    
+        
+    
+        
+    
         
     
 
@@ -137,9 +129,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../lab0/whyFPGA.html">
+        <li class="chapter " data-level="1.2.2" data-path="../lab0/whyfpga.html">
             
-                <a href="../lab0/whyFPGA.html">
+                <a href="../lab0/whyfpga.html">
             
                     
                     为什么是 FPGA？
@@ -674,17 +666,23 @@
                                 
                                 <h1 id="lab4-&#x5982;&#x4F55;&#x53EC;&#x5524;&#x6C89;&#x7761;&#x7684;&#x8F6F;&#x4EF6;">LAB4: &#x5982;&#x4F55;&#x53EC;&#x5524;&quot;&#x6C89;&#x7761;&#x7684;&#x8F6F;&#x4EF6;&quot;</h1>
 <!-- -->
-<div class="panel panel-success"><div class="panel-heading"><h3 class="panel-title" id="&#x5173;&#x4E8E;lab4"><i class="fa fa-lightbulb-o"></i> &#x5173;&#x4E8E;LAB4</h3></div><div class="panel-body"><ul>
+<blockquote>
+<h4 id="hint&#x5173;&#x4E8E;lab4">hint::&#x5173;&#x4E8E;LAB4</h4>
+<ul>
 <li>&#x672C;&#x5B9E;&#x9A8C;&#x5BF9;&#x5E94;&#x5B9E;&#x9A8C;&#x6307;&#x5BFC;&#x4E66;&#x7684;&#x7B2C; 7 &#x7AE0; &quot;C&#x8BED;&#x8A00;&#x7F16;&#x7A0B;&#x4E0E;&#x4E2D;&#x65AD;&quot;</li>
 <li>&#x672C;&#x5B9E;&#x9A8C;&#x5C06;&#x4EE5;&#x952E;&#x76D8;&#x6A21;&#x5757;&#x5B9E;&#x9A8C;&#x4E3A;&#x57FA;&#x7840;, &#x4E86;&#x89E3; CPU &#x7684;&#x4E2D;&#x65AD;&#x5904;&#x7406;&#x4EE5;&#x53CA;&#x4F7F;&#x7528; C &#x8BED;&#x8A00;&#x9AD8;&#x6548;&#x5730;&#x7F16;&#x7A0B;.</li>
 <li>&#x5B9E;&#x9A8C;&#x8FC7;&#x7A0B;&#x4E2D;&#x9047;&#x5230;&#x4E0D;&#x660E;&#x767D;&#x7684;&#x5730;&#x65B9;, &#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x56DE;&#x770B;&#x5B9E;&#x9A8C;&#x6307;&#x5BFC;&#x4E66;&#x7B2C;&#x4E09;&#x7AE0;&#x4E2D;&#x5173;&#x4E8E; Cortex-M0 &#x76F8;&#x5173;&#x7684;&#x5F02;&#x5E38;&#x4E0E;&#x4E2D;&#x65AD;&#x7684;&#x5904;&#x7406;&#x8FC7;&#x7A0B;.</li>
-</ul></div></div>
+</ul>
+</blockquote>
 <!-- -->
-<div class="panel panel-info"><div class="panel-heading"><h3 class="panel-title" id="&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x5B9E;&#x9A8C;&#x80FD;&#x5B66;&#x5230;&#x4EC0;&#x4E48;"><i class="fa fa-info-circle"></i> &#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x5B9E;&#x9A8C;&#x80FD;&#x5B66;&#x5230;&#x4EC0;&#x4E48;</h3></div><div class="panel-body"><ul>
+<blockquote>
+<h4 id="info&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x5B9E;&#x9A8C;&#x80FD;&#x5B66;&#x5230;&#x4EC0;&#x4E48;">info::&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x5B9E;&#x9A8C;&#x80FD;&#x5B66;&#x5230;&#x4EC0;&#x4E48;</h4>
+<ul>
 <li>&#x672C;&#x5B9E;&#x9A8C;&#x4E3B;&#x8981;&#x7528;&#x4E24;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#x5B9E;&#x73B0;&#x4E86; Cortex-M0 &#x7684;&#x4E2D;&#x65AD;&#x529F;&#x80FD;. &#x901A;&#x8FC7;&#x5B9E;&#x9A8C;&#x8FC7;&#x7A0B;, &#x6211;&#x4EEC;&#x80FD;&#x591F;&#x89C2;&#x5BDF;&#x5230;&#x5904;&#x7406;&#x5668;&#x5904;&#x7406;&#x4E2D;&#x65AD;&#x7684;&#x8FC7;&#x7A0B;, &#x4EE5;&#x53CA;&#x5904;&#x7406;&#x5668;&#x5185;&#x90E8;&#x7684;&#x53D8;&#x5316;. </li>
 <li>&#x540C;&#x65F6;&#x4F1A;&#x5B66;&#x4E60; C &#x8BED;&#x8A00;&#x9AD8;&#x6548;&#x7F16;&#x7A0B;&#x7684;&#x65B9;&#x6CD5;. &#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x542F;&#x52A8;&#x6587;&#x4EF6; startup_CMSDK_CM0.s, &#x6211;&#x4EEC;&#x80FD;&#x591F;&#x4F7F;&#x7528; C &#x8BED;&#x8A00;&#x5BF9;&#x5904;&#x7406;&#x5668;&#x8FDB;&#x884C;&#x7F16;&#x7A0B;. &#x4E5F;&#x5229;&#x7528;&#x4E86; C &#x8BED;&#x8A00;&#x4E2D;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x7279;&#x6027;, &#x5BF9;&#x603B;&#x7EBF;&#x4E0A;&#x5916;&#x8BBE;&#x7684;&#x5730;&#x5740;&#x7A7A;&#x95F4;&#x8FDB;&#x884C;&#x6620;&#x5C04;.</li>
-</ul></div></div>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By UESTC Intelligent Chip and System Design Lab. &#x91C7;&#x7528;<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB; &#x7F72;&#x540D;-&#x975E;&#x5546;&#x4E1A;&#x6027;&#x4F7F;&#x7528;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 3.0 &#x4E2D;&#x56FD;&#x5927;&#x9646; &#x8BB8;&#x53EF;&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E; 2022-05-20 19:03:02 </span> </footer>
+</ul>
+</blockquote>
+
                                 
                                 </section>
                             
@@ -727,7 +725,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"LAB4: 如何召唤\"沉睡的软件\"","level":"1.6","depth":1,"next":{"title":"矩阵键盘原理","level":"1.6.1","depth":2,"path":"lab4/keyboards.md","ref":"lab4/keyboards.md","articles":[]},"previous":{"title":"硬件流水灯","level":"1.5.3","depth":2,"path":"lab3/WaterLight.md","ref":"lab3/WaterLight.md","articles":[]},"dir":"ltr"},"config":{"plugins":["intopic-toc","callouts","page-footer-ex","-livereload","theme-comscore","-sharing","livereload"],"styles":{"website":"styles/styles.css"},"pluginsConfig":{"callouts":{"important":{"alert":"danger","picto":"fa-bullhorn"},"danger":{"alert":"danger","picto":"fa-exclamation-circle"},"question":{"alert":"info","picto":"fa-question-circle"},"hint":{"alert":"success","picto":"fa-lightbulb-o"},"showTypeInHeader":false,"must":{"alert":"warning","picto":"fa-edit"},"flag":{"alert":"success","picto":"fa-flag"},"info":{"alert":"info","picto":"fa-info-circle"},"note":{"alert":"info","picto":"fa-edit"},"fread":{"alert":"info","picto":"fa-comment"}},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"导航","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","visible":true},"page-footer-ex":{"copyright":"By UESTC Intelligent Chip and System Design Lab. 采用[知识共享 署名-非商业性使用-相同方式共享 3.0 中国大陆 许可协议](https://creativecommons.org/licenses/by-nc-sa/3.0/cn/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"此页面修订于"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WQ GitBook","gitbook":"*"},"file":{"path":"lab4/introduction.md","mtime":"2022-05-20T11:03:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-05-10T08:57:06.725Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"LAB4: 如何召唤\"沉睡的软件\"","level":"1.6","depth":1,"next":{"title":"矩阵键盘原理","level":"1.6.1","depth":2,"path":"lab4/keyboards.md","ref":"lab4/keyboards.md","articles":[]},"previous":{"title":"硬件流水灯","level":"1.5.3","depth":2,"path":"lab3/WaterLight.md","ref":"lab3/WaterLight.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"lab4/introduction.md","mtime":"2025-10-22T12:54:13.800Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-10-26T14:40:46.734Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -735,18 +733,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -765,11 +751,11 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 
